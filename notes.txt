@@ -1,0 +1,58 @@
+#latest start
+
+#approach A
+# 0. read from xlsx into dataframe
+# 1. calculate fft and take complex conjugate to eleminate imaginary value
+# 2. discarding any frequency below power 1.5 and calculate inverse fft
+# 3. using hilbert transformation to calculate upper envelope
+# 4. plot orignal noisy signal (code commented)
+# 5. plot FFT of noisy and filtered signal (code commented)
+# 6. plot filtered signal with upper envelope and peaks marked as 'x' (code commented)
+# 7. save the real value of peaks 
+# 8. group the peaks in chunk of n_slice = 62
+# 9. create a label as ((len(df.index),len(df.columns)//n_slice)) and mark the cell as 1 where the peak is present
+#10. create a 1D CNN network and put in the input with label
+#10.1 explain more on kernal, maxpooling and flattening 
+#11. save the modeled CNN netowork for prediction
+#12. give test input and get peak
+
+#approach B
+# 0. read from xlsx into dataframe
+# 1. pass it to zscore algorithm
+# 2. get the peak
+
+#compare results from approach A and B and display results in web based UI
+
+#latest end
+
+# Generic Approach
+# 0. Get a sample window and sampling rate to use in FFT
+# 1. Convert time domain signal to frequency domain using Fast Fourier Transform (fft is library in python)
+# 2. Analyse the frequency and apply filter (As per Prof use band pass filter with min. frequency of 30kHz and max. frequency of 50kHz), again get back the signal to time domain using Reverse Fast Fourier Transform
+# 3. Use method called as "Envelope of Signal" (Hilbert Transform is one method) which gives you max and min of the whole singal at every point in time
+# 4. Label the new data at every point in time
+# 5. Use these label data and feed it to your neural network
+#
+# sliding window with , atleast half of the length, start of signal, hamming window / alized frequency (fake frequency) this is before fft
+#
+# About the dataset
+# ->Skip columns from A to B. 
+# ->Each row comprises a sampled time signal.
+# -------------------------------------------------
+# old info
+# -> know the frequency for LPF
+# -> must band pass filter 30khz to 50kHz
+# -> envelope of the signal 
+# -> method
+# -> right to left 
+# hilbert transform for envelope, best get an envelope
+
+# sliding window
+# 
+# rectifying layer cnn
+#
+#----------------------------------------------
+# you might need to take a look
+# -> https://github.com/avhn/peakdetect
+#
+# also: https://www.samproell.io/posts/signal/peak-finding-python-js/
