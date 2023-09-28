@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 
 #used for training
 def main():
-  dataset = r'C:\study\2ndSem\CI_prev\dataset\Data_for_ML_Summer_2023.xlsx' #1st set of test data
+  dataset = r'C:\study\2ndSem\CI\computational-intelligence\dataset\Data_for_ML_Summer_2023.xlsx' #1st set of test data
   #dataset1 = r'C:\study\2ndSem\CI_prev\dataset\T_Wand_000.xlsx' #2nd set of test data
   print('Reading dataset: ', dataset)
   obj = CNNModel(dataset)

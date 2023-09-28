@@ -13,7 +13,7 @@ from CNN_Model import CNNModel
 def predict(in_data):
 
   reshape_in_data = in_data.values.reshape(1,-1)
-  model = keras.models.load_model(r'C:\study\2ndSem\CI_prev\trained_model')
+  model = keras.models.load_model(r'C:\study\2ndSem\CI\computational-intelligence')
   predict_y=model.predict(reshape_in_data)
   classes_y=np.argmax(predict_y,axis=1)
   n_slice = 62
@@ -23,7 +23,7 @@ def predict(in_data):
   return adjust
   
 def main():
-  dataset = r'C:\study\2ndSem\CI_prev\dataset\Data_for_ML_Summer_2023.xlsx'
+  dataset = r'C:\study\2ndSem\CI\computational-intelligence\dataset\Data_for_ML_Summer_2023.xlsx'
   #test_dataset = r'C:\study\2ndSem\CI_prev\dataset\T_Wand_000.xlsx' #test data with 2 index (or rows)
   print('Reading dataset: ', dataset)
   obj = CNNModel(dataset)

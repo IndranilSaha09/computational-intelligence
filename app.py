@@ -18,8 +18,8 @@ from scipy.signal import find_peaks
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'supersecretkey'
-app.config['UPLOAD_FOLDER'] = r'C:\study\2ndSem\CI_prev\static\files'
-app.config['SAVE_PLOT'] = r'C:\study\2ndSem\CI_prev\static\plot'
+app.config['UPLOAD_FOLDER'] = r'C:\study\2ndSem\CI\computational-intelligence\static\files'
+app.config['SAVE_PLOT'] = r'C:\study\2ndSem\CI\computational-intelligence\static\plot'
 
 class UploadFileForm(FlaskForm):
     file = FileField("File", validators=[InputRequired()])

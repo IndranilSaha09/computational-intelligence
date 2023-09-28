@@ -98,12 +98,12 @@ class CNNModel():
     accuracy = accuracy * 100.0
     print('Accuracy of Model: ',accuracy)
     #save the model
-    model.save(r'C:\study\2ndSem\CI_prev\trained_model')
+    model.save(r'C:\study\2ndSem\CI\computational-intelligence')
 
 
 #used for training
 def main():
-  dataset = r'C:\study\2ndSem\CI_prev\dataset\Data_for_ML_Summer_2023.xlsx' #1st set of test data
+  dataset = r'C:\study\2ndSem\CI\computational-intelligence\dataset\Data_for_ML_Summer_2023.xlsx' #1st set of test data
   #dataset2 = r'C:\study\2ndSem\CI_prev\dataset\T_File_5.xlsx' #2nd set of test data
   print('Reading dataset: ', dataset)
   obj = CNNModel(dataset)
