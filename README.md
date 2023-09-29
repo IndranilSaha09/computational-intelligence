@@ -35,5 +35,7 @@ Goal is to detect peak in given signal(s) in directory \dataset with computation
 3.	Run python app.py to get web based UI and upload sample input from \static\files and get comparision
 
  ## Results:  
+ input - \static\files\sample_input_001.xlsx
  ![image](https://github.com/IndranilSaha09/computational-intelligence/assets/116576382/ef34b7db-53ef-4ffc-babf-aebaac88c7e3)
+ Note: You can always run each file CNN_Model.py, model_train.py and model_predict.py for individual output
 
