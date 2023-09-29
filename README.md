@@ -33,3 +33,5 @@ Goal is to detect peak in given signal(s) in directory \dataset with computation
 2.	Run python model_train.py so we have the trained model save
 
 3.	Run python app.py to get web based UI and upload sample input from \static\files and get comparision
+
+ ## Results:  
