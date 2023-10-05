@@ -28,7 +28,7 @@ Goal is to detect peak in given signal(s) in directory \dataset with computation
 •	Run app.py to get web based UI to upload sample file and get results
 
 ## How to run the experiment
-1.	Run pip install -r requirement.txt and get all libs
+1.	Run pip install -r requirement.txt and get all libs (note that all libraries mentioned in the requirement are alligned with python version 3.9.7)
 
 2.	Run python model_train.py so we have the trained model save
 
