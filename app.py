@@ -38,7 +38,7 @@ def home():
             
             df = pd.read_excel(file) # read data from input file
         
-            df = df.iloc[0: ,17:]    # ignore unecessary data
+            df = df.iloc[0: ,2:]    # ignore unecessary data
             f = df.iloc[0,0:] 
             n = f.size
             time=np.arange(n)
